@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="icon list-icon"></i>
+            </a>
+          </li>
+          <li>library</li>
+          <li>
+            <a href="#">
+              <i class="icon basket-icon"></i>
+            </a>
+          </li>
+        </ul>
+        <form action="#" method="get">
+          <input type="text" placeholder="Search books...">
+          <button class="search-btn"><i class="icon search-icon"></i></button>
+        </form>
+      </nav>
+    </header>
+    <main>
+      <section class="book-info">
+        <h2>Book of the Day</h2>
+        <article>
+          <img src="./images/book-cover.png" alt="1984">
+          <h3 class="book-title">1984</h3>
+          <p class="author-name">George Orwell</p>
+
+          <ul class="star-list">
+            <li class="on"></li>
+            <li class="on"></li>
+            <li class="on"></li>
+            <li class="on"></li>
+            <li></li>
+          </ul>
+
+          <div class="btn-wrap">
+            <button class="rectangle-btn white">Distopia</button>
+            <button class="rectangle-btn white">Freedom</button>
+          </div>
+
+          <div class="btn-wrap">
+            <button class="circle-btn yellow"><i class="icon bookmark-icon"></i></button>
+            <button class="rectangle-btn black">Book now</button>
+          </div>
+        </article>
+      </section>
+      <section class="book-wrap">
+        <h2>Top Adventures</h2>
+        <article>
+          <ul class="book-list">
+            <li class="item">
+              <a href="#">
+                <img src="https://image.aladin.co.kr/product/17351/83/cover150/8956747938_1.jpg" alt="프론트엔드 개발 첫걸음">
+              </a>
+              <ul class="star-list">
+                <li class="on"></li>
+                <li class="on"></li>
+                <li class="on"></li>
+                <li class="on"></li>
+                <li class="on"></li>
+              </ul>
+            </li>
+            <li class="item">
+              <a href="#">
+                <img src="https://image.aladin.co.kr/product/14951/50/cover150/k622533968_1.jpg" alt="자바 스크립트 프로젝트 가이드">
+              </a>
+              <ul class="star-list">
+                <li class="on"></li>
+                <li class="on"></li>
+                <li class="on"></li>
+                <li class="on"></li>
+                <li class="on"></li>
+              </ul>
+            </li>
+            <li class="item">
+              <a href="#">
+                <img src="https://image.aladin.co.kr/product/9122/76/cover150/8960881899_1.jpg" alt="프론트엔드 자동화">
+              </a>
+              <ul class="star-list">
+                <li class="on"></li>
+                <li class="on"></li>
+                <li class="on"></li>
+                <li class="on"></li>
+                <li class="on"></li>
+              </ul>
+            </li>
+            <li class="item">
+              <a href="#">
+                <img src="https://image.aladin.co.kr/product/14125/95/cover150/k082532331_1.jpg" alt="타입 스크립트 퀵 스타트">
+              </a>
+              <ul class="star-list">
+                <li class="on"></li>
+                <li class="on"></li>
+                <li class="on"></li>
+                <li class="on"></li>
+                <li class="on"></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="horizontal-bar"></div>
+        </article>
+      </section>
+      <section class="author-list">
+        <h2>Popular authors</h2>
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAPEBUQDw8QDw8PEBAVFRUVDxUVEA8PFRUWFhUVFRUYHSggGBolGxYVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGC0lHyUtLS4tLTcrLS0rLS0tLS8tKy0tLSstLS0tLS0rLSsrLS0tLS0rLSstLS0tLS4tLS0tLf/AABEIARMAtwMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAAAQIFAwQGBwj/xAA/EAABBAADBQUECAMJAQEAAAABAAIDEQQSIQUGMUFRE2GBkbEiMnGhBxRSYnLB0fBCsuEjM0Njc5KiwvGCFv/EABkBAQADAQEAAAAAAAAAAAAAAAABAgMEBf/EACARAQEBAAIDAQADAQAAAAAAAAABAhExAxIhQQQTUTL/2gAMAwEAAhEDEQA/AKRNCEAhNJABNATQCE0IBCFjnxDIxb3tYLrU1Z6IMiFR4/eeGPRgMp7jTfPX0VS/fGW9IYwOmZxPmg7JCodl70RTEMkBieTQ5sJ5a8vFX6BITQgSE0kCQmhBFCaECQmhAkJoQJCaEAE0BSpAk6Qmg0Nr7SZhmZnauOjW83O/Id64vEYmSZ2dzc7jxc401o6Ach3eqe8mN7XEuv3ISWNHeOPzvyC0Gzagkk9B+YHJBt4pgy600nk0Enz0CrpGUddPXxVtG7OPcIvmW3XmtafDC/ZDqHi4/Hogrld7E3hkgIa8mSLoTbmjq0/kqt0BAs+Hf8Fkjwh0LtG8LrS0HpsTw9oc021wBB6gqS57d/aAaWwEinA5fxAXXlfkujQRRSaEEUJoQRQpJIEmhNBFCE0CQpUhABMICaBJoTQeV7RvtpAeUsnnmK1waXT7c3ZmL5sRF2b4muL3gSDtY2nUlzONXeq2d2uwhEbjgJZ5XuY1sjiOxbI8hrTeuUWRxCrdf4vMW9tTYO720Jw10UDgxw9l73NjY4dQXkEj4LopPo82k8WGQG+mIv8AlBXTY7HNi9h2HdiHgWWxwyTZTXUObY0rh5BZY95WYNvbHClkIc1r+zaWSNc45QBEbDteYdfQFZXyab/05nai2d9F849vFyRxgcgbPieCzby7swR4V7IiHEC7sH2hqFY4zeaDHdoXQ4js4HAEPjIc5xF02NuZx06gKi2li4zE90DMhjYXFpa9hcwWDxu+BVOdW/V5nMz8efbKkd28NXYlj8i7X5WvTVxG6ezs+Jc92ghAcB1LwcvkNfJdwupxEhNCCNIUkkCSUkkCTQhAkJoQFITQgVKSSaAQmhBebO2cZcKXRtZnzljnOGpYfe4csr/MBUGxtlNdEYm1nYGlt8O0YQ5pPdmaFZ7I2l2BIILmPqwDRscx36rBssHtXOj0px0PS7F+C5vJmy2uzxampI6nDxxEW+N7TWoy2fNhIWs/Z4xGIha2Ix4fDydq4uAuaYCowAOQskk1rXfVphJHPaA6mDnXE9yx4/Byg5sNiQwjURuDSwnpfELKNqrNpYT6tjpJHMc6LEhpJbWeKVorMdRYLQBpqMg43pWbfbB2byM7nOY4WYZQKI4EltLfw4xcs/aY2WMMboI4zYPQuJ1VdvljHZOya0e2QM3ip/S/MqDZWFDQ59aykH/4AAb8NK0W8owsytA6BSXZOnna7+BCEKUEhNJAkJoQJCYQgSEJoBCEIBNJNAJoQgFiixn1ecOJ0kHzbQPyIWVamPw3a5RzGYj5Wq7ks+r+O2a+O3jazExGN+bK5vFjy1w6EObqP/Vq4TCw4e2yxPeOTw+Qv4Hv7/kubwG1Z8CQHNzxfMN6LpIt88LV3R6FptcszZ07pufqrx2z4JJmydi+GJhze+8OkIAoON2RetKtx2KM84oUyPX4dB8f0WTeje6JzMsAzSO7qDR+qhh4sja4ni4/adzK1xm281j5vJOOImhNC3chITSQJCaSASTQgSE0IEhCEAhNCAQhRllawZnENaOZ4IJoVLid4Gj+7YXd7tB5cfRVk+2Jn6F+UdGivnx+atM1S7jo8ZtGKHRzrd9kau/p4qy2RCJY4p7BMgeSB/B7eUMPeA3XvJXnpKs9jbclwtiPK5hcC5hGhNVYI1Br/wAUb8dueIt4vNM65vT1R2zI5I6c0HRUeN3RiIJZYPosmyt/sG6hMJMOTXvNL2X3OZeneQFYYraWGn0hxcLr0OWZt10Iu1yemsu/Pkxv9ec4/ZghcXN9rKW13m+CstnbYin9kHJIOLHaOB5gfa8Fv7xGFtDtYgNXf3jeXDmuJ2x2UkznxXkputVbgNSO79Fv4ub25v5Fmfsduhcbh9sTxD384A4P9r58fmrXD7xj/EiI72uv5GvVa+tc83F6haUG1oH6CQA/eBb8zot1VWllJCaSJCSaECQmhBFNCEAhCEEZpAxpc7g0En4Bcdj8c+Y5n6NHADgz99Vd7zYioxGOMh1/C2j65VzodavmMfJfws18eIUHD+ijy72mvDl8llZqrqJAaaqVIKTSiAWqBZfK1NI6fBBjDO5SDVMpIIPb6FLMaUyk3giSaVv7L2o6BwBJMROreNd7eirz+/JRvXwP5KKT49Aa4EAggggEHkQeaaot18dmaYjxZqzvZz8j6q9WVdEvMCSaESSEIQJCEIBNCEHLbyPucDk1jR4kkn1Cq3CtfP8AVbu2ZM2IkH2S0eTG/na0x3rWdOfXbE91O14OHzWWMUFjfGCMruHJPDuPuu4t+Y6oj8Zwkk0qSlAKQTSQIaJlJ6GlEhRCaiUDCxOFmv3SyNKg0DieZv8ARBt7LxHZzxu4NzZT8HCvIWD4Lt155JqNPBdtsjGieIO/jbo8feHP4HiqajXx38biEIVGgQhCCKaSaAQhAQcJjiTNI4c5JPEZjSiD/RNzrc/8b/UoAW0c1NzbWCQEEO5t497eqzhDuqERDuana1myBvsuOXpemh4ceSy5lHKbGS0EqFoJUoTu1FJqZUJO1ByLW1svZk2LlEUDczjxJ0YwdXH9lLeCS28Q9j7Mlxcgihbmcas8GsbwLnHkF6fsndvD7OY0lhxOLdwIYCQfuNOjB3nxK3d39gs2dAIoR2k8ht8jhQLup6NHJv8AUq1wzAw6OzPPvOPEn9O5cnk8l18nT0fD4Jj7e3HYjcj6xLJiMZJ2BmcXdnCG+xoANSDbtLNDiTquIbiRgcU+PM50Ye5jjkIJa0kB5adRV+q9b3q2t9Rw7sQ2PtiHNbq4NouNA9auuHcvGNp41+JlfPJRklIJoUAAAAAPgAtPFdXvpj/ImM8cdu3BQq3d3EGSBoPvR2w/Ae7/AMaVkrM5eQhCESSEIQCEIQee4p+WWRpFjtH8OXtEKIivUOePH8itjaDC3ESj/NefBxzD1WMsviTXctIwozlvH2m9RxHxCut1cIzEY2CKSsj32bFtIa1zwCOYJaB4qiyt/hab/ER+avtzMSyHHQvkZmaHkNp2ge9paLvlqmuqnEntHtUuy2v95sb/AItBXPbU+j3Bz6hnYPP8URy6n7tZT4hdU2YaGsq2WSrinM6elri9x8zbSxbsLiJYoQKZI5gdLFHI/K0kXTm0CauwL4C+u5uVst+0MR2LnljS15zhgIDhRqtF130h4DD4bGB5iZK3EB76c3NT7Gb+IXx+dKz+j/GYVrXTSZWSOpjGtipsUbSdBWmt8eNaLp1bMezmziXfq0p/ownA/s8TG/8AFG5noXKtxH0fbQbw7B4+7I6/+TQvX8Njonj2XgraBae9Zf26a3+Pj/HhDtzNpXX1R3Hj2sVfH3l6XunsH6lEIw23nV7qrO88T8OQHQLqw1qyCgq63ddp8fjz47zHnG9O9+JwU7oDBCfZa9ri5xtjrrQVWoI8Fzn/AO+xfJmHAu/cfr1s51Y/TEysVC/m7Dlv+15I/nXA2t8Yzc9OXyeXc1Zyt9sb0YrFt7OaXNGHlzWhrQ1t8BoLIF6XapXEc+fkou4hQvTzC0k46ZW2/a39gzmPEsp2VrjlcORBugfGqK7peZe0KLbLwQB1LrFeN15r01V00ySEJqqyKEIQCAhCDhNoz9pPK6gP7Rza/B7OvfoFrEk86VhvKwtxRtuVr2tINaPoAE/EHTyVddrSdMbPqbBXD/1SbJrfT9+vooXSwsPAcySfz9VKOF9s/ePFwPzRzycACHOL2VwHsuscgrmL6Q8cOJieK4FhB8wfyXGNNkrI398VW5l7i03rPVbe8+38RjXNdMI4wzNVWRrXOu5W26MmPENwYSPEw5ne0ba4m9QDeo8Fzsha4Uapes/Rzi2xbPiZVuuY1xNGV5HyWfl+Y4jo8GrrfNaGH3u7E5cThpcOfvMth8R/RdJszerCzDR4b42PMLNtCUPac7GBvV9UF5zt+fBxOLu0iD+jBr8uK559devn69bika8XHIHDuIKl2hHReAu3udGf7HP8S7L6aq32f9JsrdJmOcOt2fPQ+qt6Vn/ZlcfS7Nc+HHSKU+bm/oVwWb96Lb3l3j+uz9rZDWsaxoJ1oEk/M/JaEbZHsMjGPexpolosA99Lox8zI4/J91bE7WJx08SsTJf4uXr3BZcPE+b2ImOkcKvKLonqeA8VflThZ7twZ8S01bWW86cKaQP+Rb5LuFU7u7KOHYS+u1krNRsNA4NvxP7CtlStMziEmhChKKFG0WgkhRtNBV7xbPM8XsH247cBXv6atXFxyaL0i1zO8eyImMkxDS5hAstFFjnE14WSpl4V1nlzr3WFDNR+AparsXY4UsRlce61blWZbwl0R2vwWm2N55lZo8KTxJRPEjKZupXW4PfV8EDIcND7jQM7vZBNamhqdVy0eEA5BbLW0lzz2Z8nr/yz7R2ti8SbmncR9lpytHkq44YdP1K3KSKmZkUu7e6rJcOsBhKtSy1F0VKPVM2quzK7P6P5PYmb9l0Z8wR/1XOGJXm4TvbmHVsZ8i79VFi8vLppdlYdz+0dDG5/UtFk9/VbYAHAUi0WqrGklaLQNCVoQQtFqFpWgyWi1C0AoMlrn99pqw4YP8SRvk0F3qAr21y2+UlvjZ9lrnf7iAP5SpiLXKwQXr3rabh1lwzPZ81nAV5Gd0wxx0s2UJkJAqVEgUFJFoHaRQgBBJuixvNmlJxWNmuqBTaNJ7la7kCpXjrEPk4fqqjFO0rqrjc7SZ3+kf5mqummHXoStK1RokhRtFoJJJWhBgtFqNotBO0WoWnaCdrj9435sQ77rWt+V/8AZdba4vab80sh++4eANfkrZU30wxigFIJBMK7IwUFJFoGki0AoJJqNpOegjI5SaFAKSDBiDZAV5ukP7V5/wAuvNw/RUI1ce5dDuoPakPRrPmXfoq3pfPcdNaMyhaVqjVO0WoWi0GS0LHaEGG0WseZFoMtotY8yMyDKHLh3vzEn7RJ8za7KR2h+B9FxbeAVss9phSUWhSV2YQhNAqTQkSgHFYymUUiQ0IedE1CTVBjibp8V0O6v+Kf9P8A7qjpXm7HCT8TfQ/qq66Wz2v7Rax2jMqNWS0WseZGZBktCx5kIMFotCEBadpIQO1yW0Ixh35HOBsWPw2QL6HRdYuQ2y7PiHk6htNHgNfnatlXUlNkjTwKkCFpdk3oEux6OcPFXU9G/aLVe7O3g8n4pGWQcwfBOUeiwSWh27+jUfWX/ZCjk9K3qTWiMQ/7IUXTSdw8E5T6VvEqDnAcStAlx4uPokYtNdU5T6Nz62wuAvQuAJHIE6ldphoGRtyMFAeZPU9688I0XokZtoPUD0VKvJIyZkWooUJStFqKEErQohCAQpUikCpJSpFIIrh5ye0ffHO/+YruqXBOkzOLvtEu8zatlFTapKAKCVohCUqNpvUAVAnaSErQSCiUyVAlQk3FB4KCkOCDG5eg4YUxo6Mb6BefO4L0VmoB6gKlSEJoUBITRSBITQgkE0IQFJ0khBCb3T+E+i8+i4D4BCFbKKzBNCFohjfx8FhQhVpEmqaEKRApPQhVWDOCkzghClFYnL0SH3W/hb6JoVKlNJCFAEIQgRQhCD//2Q==" alt="작가 사진">
+        <h3>George Orwell</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quibusdam exercitationem quo magni repellat optio minima laudantium, minus ipsum eos ipsa maxime aperiam. Incidunt labore assumenda optio distinctio cupiditate vel.</p>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
