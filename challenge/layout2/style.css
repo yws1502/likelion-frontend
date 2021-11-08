@@ -63,8 +63,8 @@ nav .icon {
   background-image: url(images/star_border_black.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
 }
 
 .star-list li[class="on"] {
@@ -115,7 +115,7 @@ nav .icon {
 /* layout */
 
 .container {
-  width: 80%;
+  width: 550px;
   margin: 0 auto;
 }
 
@@ -143,20 +143,95 @@ nav form {
 
 nav input {
   position: absolute;
+  top: 70px;
+  left: 30px;
   border: 0;
   border-radius: 30px;
-  box-shadow: -5px 5px 70px 0 #000;
+  box-shadow: 3px 10px 10px 0px rgb(200, 200, 200);
   font-size: 16px;
   width: 90%;
   margin: 0 auto;
   padding: 15px 30px;
-  left: 10px;
-}
-
-nav input:focus-within {
-  border: 0;
 }
 
 nav .search-btn {
   position: absolute;
+  top: 80px;
+  right: 45px;
+}
+
+/* main */
+main {
+  padding: 60px 40px;
+}
+
+/* book-detail */
+
+.book-info h2 {
+  margin: 20px 0;
+}
+
+.book-info article {
+  height: 250px;
+}
+
+.book-info img {
+  float: left;
+  height: 250px;
+  margin-right: 30px;
+}
+
+.book-info {
+  margin: 40px 0;
+}
+
+.book-info .author-name {
+  margin-bottom: 10px;
+}
+
+.book-info .btn-wrap [class="rectangle-btn white"] {
+  width: 100px;
+  margin: 35px 13px 35px 0;
+}
+
+.book-info .btn-wrap [class="rectangle-btn black"] {
+  width: 150px;
+  margin-left: 25px;
+}
+
+/* book list */
+
+.book-wrap article {
+  margin: 30px 0;
+}
+
+.book-wrap .book-list {
+  display: flex;
+  text-align: center;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.book-wrap .book-list .item img {
+  height: 150px;
+  margin: 10px;
+}
+
+.book-wrap .book-list .item img:hover {
+  border: 2px solid rgb(253, 204, 50);
+}
+
+/* author info */
+
+.author-list h2 {
+  margin: 20px 0;
+} 
+
+.author-list img {
+  float: left;
+  margin: 0 30px 80px 0;
+}
+
+.author-list h3 {
+  margin: 15px;
 }
