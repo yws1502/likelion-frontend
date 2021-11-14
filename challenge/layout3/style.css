@@ -1,0 +1,178 @@
+/* common */
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.blind {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    width: 1px;
+    height: 1px;
+    border: 0;
+    margin: -1px;
+    padding: 0;
+}
+
+.wrap {
+    display: flex;
+    padding: 50px 50px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(245, 245, 245);
+}
+
+[class^="container"] {
+    background-color: #fff;
+    width: 414px;
+    height: 736px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 30px;
+    box-shadow: 4px 4px 7px 1px rgba(0,0,0,0.1);
+    margin: 0 50px;
+}
+
+/* button */
+[class^="btn"] {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;;
+    width: 24px;
+    height: 24px;
+}
+/* button in the list */
+.btn-back {
+    background-image: url(./images/back_black.svg);
+}
+
+.btn-search {
+    background-image: url(./images/search_black.svg);
+}
+
+.btn-setting.black {
+    background-image: url(./images/vert_black.svg);
+}
+.btn-setting.gray {
+    background-image: url(./images/vert_gray.svg);
+}
+
+.btn-previous.white {
+    background-image: url(./images/previous_white.svg);
+}
+.btn-play.white {
+    background-image: url(./images/play_white.svg);
+}
+.btn-next.white {
+    background-image: url(./images/next_white.svg);
+}
+
+.btn-repeat {
+    background-image: url(./images/replay.svg);
+}
+.btn-previous.black {
+    background-image: url(./images/previous_black.svg);
+}
+.btn-play.black {
+    background-image: url(./images/play_black.svg);
+}
+.btn-next.black {
+    background-image: url(./images/next_black.svg);
+}
+.btn-shuffle {
+    background-image: url(./images/shuffle.svg);
+}
+
+.button-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* music containter-list area */
+/* top */
+.container-list .button-wrap {
+    margin: 30px 20px;
+}
+
+/* list-title */
+.container-list .list-title {
+    text-align: center;
+}
+
+.list-title img {
+    width: 95px;
+    height: 95px;
+    border-radius: 100%;
+    box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.2);
+    margin-bottom: 5px;
+}
+
+.list-title .list-name {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.list-title .genre {
+    color: #626262;
+}
+
+/* list */
+.list .button-wrap {
+    margin: 15px 50px 30px;
+}
+
+.list .button-wrap [class$="btn"] {
+    padding: 6px 0;
+    font-size: 16px;
+    text-align: center;
+    width: 45%;
+    border-radius: 25px;
+}
+
+.list .button-wrap .shuffle-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.list .button-wrap .favorite-btn {
+    color: #626262;
+    box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.1);
+}
+
+.list .button-wrap .favorite-btn span {
+    vertical-align: 5px;
+}
+
+.favorite-btn::before {
+    content: "";
+    background-image: url(./images/favorite_black.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;;
+    width: 24px;
+    height: 24px;
+}
+
+
+
+/* nav */
+
+/* music container-detail area */
