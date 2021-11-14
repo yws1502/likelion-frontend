@@ -109,10 +109,12 @@ button {
 
 /* top */
 .button-wrap {
-    margin: 30px 20px 20px;
+    margin: 30px 20px 18px;
 }
 
+/*  */
 /* music containter-list area */
+/*  */
 /* list-title */
 .container-list .list-title {
     text-align: center;
@@ -189,6 +191,11 @@ button {
     margin-top: 15px;
 }
 
+.list-wrap .music-list li:hover {
+    background-color: rgb(240, 240, 240);
+    border-radius: 15px;
+}
+
 .music-list .music-link::before {
     float: left;
     content: "";
@@ -206,7 +213,7 @@ button {
     line-height: 30px;
 }
 
-.music-list .music-link .music-name {
+.music-list .music-link .music-title {
     color: #626262;
 }
 
@@ -223,11 +230,11 @@ button {
     background-color: #323232;
     width: 90%;
     border-radius: 40px;
-    box-shadow: 2px 2px 10px 3px rgba(0,0,0,0.1);
+    box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.1);
 }
 
-.music-controller .music-name {
-    color: #626262;
+.music-controller .music-title {
+    color: #959595;
 }
 
 .music-controller .music-author {
@@ -240,7 +247,76 @@ button {
 
 .music-controller .music-list-nav .button-wrap {
     margin: 15px auto 0;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
+/*  */
 /* music container-detail area */
+/* top */
+.container-detail .button-wrap {
+    margin-bottom: 60px;
+}
+
+.container-detail .main-music {
+    text-align: center
+}
+
+.main-music img {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 8px 11px 5px rgba(0,0,0,0.2);
+    margin-bottom: 35px;
+}
+
+.main-music .music-title {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+.main-music .music-author {
+    color: #636363;
+    margin-bottom: 60px;
+}
+
+.main-music .play-bar {
+    position: relative;
+}
+
+.main-music .play-bar::before,
+.main-music .play-bar::after {
+    position: absolute;
+    top: -33px;
+    width: 50px;
+    height: 14px;
+}
+
+.main-music .play-bar::before {
+    content: "0:00";
+    left: 30px;
+}
+.main-music .play-bar::after {
+    content: "5:14";
+    right: 30px;
+}
+
+.main-music .play-bar .total {
+    position: relative;
+    margin: 0 auto;
+    height: 2px;
+    width: 80%;
+    background-color: #cdcdcd;
+    margin-bottom: 70px;
+}
+
+.main-music .play-bar .total::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100%;
+    width: 25%;
+    background-color: #7aa3d2;
+}
+
+.main-music .music-detail-nav .button-wrap {
+    justify-content: space-evenly;
+}
