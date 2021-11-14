@@ -78,8 +78,8 @@ button {
 .btn-previous.white {
     background-image: url(./images/previous_white.svg);
 }
-.btn-play.white {
-    background-image: url(./images/play_white.svg);
+.btn-stop.white {
+    background-image: url(./images/stop_white.svg);
 }
 .btn-next.white {
     background-image: url(./images/next_white.svg);
@@ -104,14 +104,15 @@ button {
 .button-wrap {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+/* top */
+.button-wrap {
+    margin: 30px 20px 20px;
 }
 
 /* music containter-list area */
-/* top */
-.container-list .button-wrap {
-    margin: 30px 20px;
-}
-
 /* list-title */
 .container-list .list-title {
     text-align: center;
@@ -135,11 +136,12 @@ button {
 }
 
 /* list */
-.list .button-wrap {
+/* list-btn */
+.list-wrap .button-wrap {
     margin: 15px 50px 30px;
 }
 
-.list .button-wrap [class$="btn"] {
+.list-wrap .button-wrap [class$="btn"] {
     padding: 6px 0;
     font-size: 16px;
     text-align: center;
@@ -147,17 +149,17 @@ button {
     border-radius: 25px;
 }
 
-.list .button-wrap .shuffle-btn {
-    background-color: #000;
+.list-wrap .button-wrap .shuffle-btn {
+    background-color: #323232;
     color: #fff;
 }
 
-.list .button-wrap .favorite-btn {
+.list-wrap .button-wrap .favorite-btn {
     color: #626262;
     box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.1);
 }
 
-.list .button-wrap .favorite-btn span {
+.list-wrap .button-wrap .favorite-btn span {
     vertical-align: 5px;
 }
 
@@ -171,8 +173,74 @@ button {
     height: 24px;
 }
 
+/* list music-list */
+.list-wrap .music-list {
+    margin: 0 35px;
+}
 
+.list-wrap .music-list li {
+    position: relative;
+    overflow: hidden;
+    height: 70px;
+    width: 100%;
+}
+
+.list-wrap .music-list li+li {
+    margin-top: 15px;
+}
+
+.music-list .music-link::before {
+    float: left;
+    content: "";
+    background-image: url(http://image.yes24.com/momo/TopCate946/MidCate005/94543675.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.music-list .music-link > [class^="music"] {
+    width: 310px;
+    line-height: 30px;
+}
+
+.music-list .music-link .music-name {
+    color: #626262;
+}
+
+.music-list li .btn-setting {
+    position: absolute;
+    top: 18px;
+    right: -5px;
+}
 
 /* nav */
+
+.music-controller .music-list-nav {
+    margin: 0 auto;
+    background-color: #323232;
+    width: 90%;
+    border-radius: 40px;
+    box-shadow: 2px 2px 10px 3px rgba(0,0,0,0.1);
+}
+
+.music-controller .music-name {
+    color: #626262;
+}
+
+.music-controller .music-author {
+    color: #fff;
+}
+
+.music-controller .text-wrap {
+    padding: 10px 0;
+}
+
+.music-controller .music-list-nav .button-wrap {
+    margin: 15px auto 0;
+    justify-content: space-around;
+}
 
 /* music container-detail area */
